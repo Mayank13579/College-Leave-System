@@ -1,19 +1,19 @@
 import React from "react";
-import './student.css';
- import './Homepage.css';
+import '../pages/CSS/student.css';
+ import '../pages/CSS/Homepage.css';
 import { useEffect,useState } from "react";
 import {getDocs,collection,doc,addDoc,setDoc,getDoc, updateDoc} from 'firebase/firestore';
-import {db,auth,storage} from './firebase-config';
+import {db,auth,storage} from '../firebase-config';
 import {ref, uploadBytes} from 'firebase/storage';
-import BasicSelect from './components/Select';
-import BasicTextFields from './components/TextField';
+import BasicSelect from '../components/Select';
+import BasicTextFields from '../components/TextField';
 import Button from '@mui/material/Button';
 import { Box, minWidth } from "@mui/system";
 import { Collapse, Grid ,Stack, Typography} from "@mui/material";
-import Orders from './components/Table';
+import Orders from '../components/Table';
 import Alert from '@mui/material/Alert';
-import Logout from "./components/Logout";
-import Heading from "./components/Heading";
+import Logout from "../components/Logout";
+import Heading from "../components/Heading";
 import { Center } from "@chakra-ui/react";
 const datecheck=(s1,s2)=>{
    const arr1=s1.split("-");

@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import {db,auth} from './firebase-config';
+import {db,auth} from '../firebase-config';
 import { getDocs,doc,collection,updateDoc } from "firebase/firestore";
 
 import { async } from "@firebase/util";
-import BasicSelect from "./components/Select";
-import RowAndColumnSpacing from "./components/Grid";
+import BasicSelect from "../components/Select";
+import RowAndColumnSpacing from "../components/Grid";
 import { Button ,Collapse} from "@mui/material";
-import TextField from './components/TextField';
+import TextField from '../components/TextField';
 import Alert from '@mui/material/Alert';
-import Heading from "./components/Heading";
-import Logout from "./components/Logout";
-import BigCard from "./components/BigCard";
-import './css/Gridcss.css'
+import Heading from "../components/Heading";
+import Logout from "../components/Logout";
+import BigCard from "../components/BigCard";
+import '../css/Gridcss.css'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CancelIcon from '@mui/icons-material/Cancel';
 const Hod=()=>{

@@ -1,7 +1,7 @@
 import React from "react";
-import './css/ye.css';
-import Card from './components/Card';
-import pic from './assets/backg1.jpg' 
+import '../css/ye.css';
+import Card from '../components/Card';
+import pic from '../assets/backg1.jpg' 
 const Homepage=()=>{
    return (
       <>

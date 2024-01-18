@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import {BrowserRouter,Link, Navigate, useNavigate} from 'react-router-dom';
-import {db,auth } from './firebase-config';
+import {db,auth } from '../firebase-config';
 import { signInWithEmailAndPassword,onAuthStateChanged } from "firebase/auth";
-import TextField from './components/TextField';
+import TextField from '../components/TextField';
 import { Button } from "@mui/material";
 const Hodlogin=(props)=>{  
     const navigate=useNavigate();

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {auth} from './firebase-config';
+import {auth} from '../firebase-config';
 import { useNavigate } from "react-router-dom";
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
  import { Alert,Collapse } from '@mui/material';
 import { useState } from 'react';
-import pic from './assets/photo_login.avif';
+import pic from '../assets/photo_login.avif';
  import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,

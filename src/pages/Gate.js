@@ -1,6 +1,6 @@
 import { collection ,getDocs} from 'firebase/firestore';
 import React, { useEffect, useState } from 'react';
-import {db,auth,storage} from './firebase-config';
+import {db,auth,storage} from '../firebase-config';
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
  const Gate = () => {
   const [reg,setreg]=useState("");

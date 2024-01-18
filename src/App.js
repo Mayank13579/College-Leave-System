@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-import Login from './Login';
+import Login from '../src/pages/Login';
 import {BrowserRouter,Routes,Route,Link,Navigate} from 'react-router-dom';
-import Homepage from "./Homepage";
-import './App.css';
-import Stu from "./student";
+import Homepage from "../src/pages/Homepage";
+import '../src/pages/CSS/App.css';
+import Stu from "../src/pages/student";
 import { Button } from "@mui/material";
 import {auth} from './firebase-config';
 import {signOut} from 'firebase/auth';
-import Authority from "./Authority";
-import Hod from './Hod';
-import ClassAuth from "./ClassAuth";
-import Hodlogin from "./Hodlogin";
-import Gate from "./Gate";
+import Authority from "../src/pages/Authority";
+import Hod from '../src/pages/Hod';
+import ClassAuth from "../src/pages/ClassAuth";
+import Hodlogin from "../src/pages/Hodlogin";
+import Gate from "../src/pages/Gate";
 import Navbar from "./components/Navbar"
-import SignIn from "./Loginn";
+import SignIn from "../src/pages/Loginn";
 const App=()=>{
     const [curruser,setcurruser]=useState("");
     const [isAuth,setIsAuth]=useState(false);

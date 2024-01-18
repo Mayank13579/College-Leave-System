@@ -6,8 +6,8 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import "./Login.css";
-import { auth } from "./firebase-config";
+import "../pages/CSS/Login.css";
+import { auth } from "../firebase-config";
 import { useNavigate } from "react-router-dom";
 import Homepage from "./Homepage";
 

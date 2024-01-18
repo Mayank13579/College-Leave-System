@@ -1,15 +1,15 @@
 import React from "react";
 import { useEffect,useState } from "react";
-import {db} from './firebase-config';
+import {db} from '../firebase-config';
 import {getDocs,collection,doc,addDoc,updateDoc} from 'firebase/firestore';
-import Heading from "./components/Heading";
-import RowAndColumnSpacing from "./components/Grid";
+import Heading from "../components/Heading";
+import RowAndColumnSpacing from "../components/Grid";
 import { Button,Collapse } from "@mui/material";
 import Alert from '@mui/material/Alert';
-import TextField from './components/TextField';
-import BigCard from "./components/BigCard";
-import Logout from './components/Logout';
-import './css/Gridcss.css';
+import TextField from '../components/TextField';
+import BigCard from "../components/BigCard";
+import Logout from '../components/Logout';
+import '../css/Gridcss.css';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CancelIcon from '@mui/icons-material/Cancel';
 const Authority=()=>{

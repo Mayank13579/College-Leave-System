@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import {db,auth} from './firebase-config';
+import {db,auth} from '../firebase-config';
 import { getDocs,doc,collection,updateDoc } from "firebase/firestore";
 
-import BasicSelect from "./components/Select";
-import RowAndColumnSpacing from './components/Grid';
-import TextField from './components/TextField'
+import BasicSelect from "../components/Select";
+import RowAndColumnSpacing from '../components/Grid';
+import TextField from '../components/TextField'
 import { Collapse,Button } from "@mui/material";
 import Alert from '@mui/material/Alert';
-import BigCard from "./components/BigCard";
-import Heading from './components/Heading';
-import Logout from './components/Logout';
+import BigCard from "../components/BigCard";
+import Heading from '../components/Heading';
+import Logout from '../components/Logout';
 //import './css/Gridcss.css';
-import './index.css'
+import '../index.css'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CancelIcon from '@mui/icons-material/Cancel';
 const ClassAuth=()=>{
