@@ -1,7 +1,6 @@
 
 import pic from '../assets/download.jpg';
 import '../css/card.css';
-
 import Button from '@mui/material/Button';
 import {Link} from "react-router-dom";
 import SendIcon from '@mui/icons-material/Send';
@@ -26,7 +25,7 @@ const CardI=(props)=>{
             <Typography variant="body2">
               username  : passwords
               <br />
-              mayank@gmail.com   : mayank
+              mayank@gmail.com  : 123456
               <br />
               comphod@gmail.com : comphod
               <br />
@@ -43,9 +42,7 @@ const CardI=(props)=>{
         <>
         <div style={{display:"flex" ,alignItems:"center",justifyContent:"center" ,gap:"10rem",flexWrap:"wrap",marginTop:"150px"}}>
             <Link to={`/${props.link}`} className="linktext_card">
-           
-
- 
+            
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
@@ -56,10 +53,10 @@ const CardI=(props)=>{
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-          Click to login 
+          Click to Signin  
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            This platform gives you the ability to apply and get leave approved online.
+            This platform gives you the ability to apply and get leave approved online quickly.
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -2,6 +2,8 @@ import * as React from 'react';
 import {auth} from '../firebase-config';
 import { useNavigate } from "react-router-dom";
 import Avatar from '@mui/material/Avatar';
+import {db } from '../firebase-config';
+
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -11,6 +13,7 @@ import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import { collection, addDoc, doc, setDoc } from 'firebase/firestore';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -23,6 +26,9 @@ import pic from '../assets/photo_login.avif';
     onAuthStateChanged,
     signOut,
   } from "firebase/auth";
+
+
+
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -69,7 +75,7 @@ setalert(true);
         details.password
       );
       setIsAuth(true);
-      // console.log("iske baad ye")
+     
       if(details.email=="auth@auth.com"){
         navigate('/auth');
     }
@@ -89,6 +95,7 @@ console.log("ok");
         setalert3(true);
         errmess=err.message;
         console.log(err.message);
+        console.log(err.code);
     }
   };
 

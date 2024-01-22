@@ -28,9 +28,6 @@ const datecheck=(s1,s2)=>{
 
 
     const Stu=(props)=>{
-
-
-
       const [req,setreq]=useState({name:"",
       reason:"",
       per_jd:false,
